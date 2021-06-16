@@ -1,6 +1,5 @@
-[
-    {
-
+{
+   Ayame: {
     "firstname": "Ayame",
     "height": 160,
     "email": "Ayame@gmail.com",
@@ -14,7 +13,7 @@
     },
     "cars": [ "BMW", "Nissan GT-R", "Audi"] 
     },
-    {
+   amanda:{
 
     "firstname": "amanda",
     "height": 185,
@@ -29,7 +28,7 @@
     },
     "cars": [ "toyota", "tbc", "toda"] 
     },
-    {
+  faker:{
 
     "firstname": "faker",
     "height": 180,
@@ -44,4 +43,4 @@
     },
     "cars": [ "nike", "ombv", "dade"] 
     }
-]
+}
