@@ -1,5 +1,6 @@
 {
-   Ayame: {
+   "employees":[
+   "Ayame": {
     "firstname": "Ayame",
     "height": 160,
     "email": "Ayame@gmail.com",
@@ -13,7 +14,7 @@
     },
     "cars": [ "BMW", "Nissan GT-R", "Audi"] 
     },
-   amanda:{
+   "amanda":{
 
     "firstname": "amanda",
     "height": 185,
@@ -28,7 +29,7 @@
     },
     "cars": [ "toyota", "tbc", "toda"] 
     },
-  faker:{
+  "faker":{
 
     "firstname": "faker",
     "height": 180,
@@ -42,5 +43,5 @@
     "行動電話": "0908-995520"
     },
     "cars": [ "nike", "ombv", "dade"] 
-    }
+    }]
 }
