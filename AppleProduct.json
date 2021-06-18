@@ -1,6 +1,6 @@
 {
         "iPad":[
-            { "id" : "A001 " ,"imgUrl":"", "color" : "太空灰色 ","storage":"32GB","network":"WI-FI ", "price" : "10500" ,"description":"含營業稅和其他法定稅費：約 NT$525。" },
+            { "id" : "A001 " ,"imgUrl":"https://raw.githubusercontent.com/soulkey373/Fiststore/main/AppleImg/ipad-2020-space-wifi.png", "color" : "太空灰色 ","storage":"32GB","network":"WI-FI ", "price" : "10500" ,"description":"含營業稅和其他法定稅費：約 NT$525。" },
             { "id" : "A002 " ,"imgUrl":"", "color" : "太空灰色 ","storage":"32GB","network":"WI-FI+行動網路", "price" : "14800" ,"description":"含營業稅和其他法定稅費：約 NT$730。" },
             { "id" : "A003 " ,"imgUrl":"", "color" : "太空灰色 ","storage":"128GB","network":"WI-FI ", "price" : "13500" ,"description":"含營業稅和其他法定稅費：約 NT$668。" },
             { "id" : "A004 " ,"imgUrl":"", "color" : "太空灰色 ","storage":"128GB","network":"WI-FI+行動網路", "price" : "17800" ,"description":"含營業稅和其他法定稅費：約 NT$873。" },
