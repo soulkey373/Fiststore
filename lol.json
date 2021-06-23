@@ -1,20 +1,20 @@
 {
-     {
-     "name": "派克":,
+     [
+     "name": "派克",
      "imgUrl": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_1.jpg"
-    },
+    ],
 
-     {
+     [
      "name":  "齊勒斯",
      "imgUrl": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_1.jpg"
 
-    },
-    {
+    ],
+    [
         "name": "瑟雷西",
         "imgUrl": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_1.jpg"   
-       },
-    {
+       ],
+    [
         "name": "優咪",
         "imgUrl": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_1.jpg"   
-       }
+       ]
 }
