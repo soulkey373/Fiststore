@@ -1,0 +1,121 @@
+
+{
+    "Top":[
+
+        {
+                "name":"賽勒斯" ,
+                "ENname":"Sylas"
+        },
+
+        {
+                "name":"厄薩斯",
+                "ENname":"Aatrox"
+
+        },
+
+        {
+                "name":"悟空",
+                "ENname":"Wukong"
+        },
+
+        {
+                "name":"關",
+                "ENname":"Gwen"
+        }
+        ],
+    "Jungle":[
+
+        {
+                "name":"薩柯" ,
+                "ENname":"Shaco"
+        },
+
+        {
+                "name":"李興",
+                "ENname":"LeeSin"
+
+        },
+
+        {
+                "name":"趙信",
+                "ENname":"XinZhao"
+        },
+
+        {
+                "name":"維爾戈",
+                "ENname":"Viego"
+        }
+        ],
+    "Middle":[
+
+        {
+                "name":"夜曲" ,
+                "ENname":"Nocturne"
+        },
+
+        {
+                "name":"賽特",
+                "ENname":"Sett"
+
+        },
+
+        {
+                "name":"卡蜜兒",
+                "ENname":"Camille"
+        },
+
+        {
+                "name":"菲歐拉",
+                "ENname":"Fiora"
+        }
+        ],
+
+    "Bottom":[
+
+        {
+                "name":"伊澤瑞爾",
+                "ENname":"Ezreal"
+        },
+
+        {
+                "name":"煞蜜拉",
+               
+                 "ENname":"Samira"
+        },
+
+        {
+                "name":"汎",
+                "ENname":"Vayne"
+        },
+
+        {
+                "name":"吉茵珂絲",
+                "ENname":"Jinx"
+        }
+        ], 
+
+    "Support":[
+
+                {
+                "name": "派克" ,
+               
+                 "ENname":"Pyke"
+            },
+
+            {
+                "name":"齊勒斯",
+                "ENname":"Xerath"
+            },
+
+            {
+                "name":"瑟雷西",
+                "ENname":"Thresh"
+            },
+
+            {
+                "name":"優咪",
+                "ENname":"Yuumi"
+            }
+        ]
+}
+
