@@ -1,0 +1,169 @@
+﻿/* Fixed sidenav, full height */
+
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: -300px;
+    box-shadow: 2px 2px 5px rgb(150, 150, 150);
+    /* overflow: hidden; */
+    overflow-y: auto;
+    display: block;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+    .sidenav.show {
+        background-color: #ffffff;
+        opacity: 1;
+        left: 0;
+    }
+
+.linkBox {
+    background-color: rgb(243, 243, 243);
+}
+
+    /* Style the sidenav links and the dropdown button */
+
+    .linkBox a {
+        padding: 6px 0 6px 16px;
+        text-decoration: none;
+        font-size: 19px;
+        color: #818181;
+        display: block;
+        border: none;
+        background: none;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+        font-family: "Ubuntu", sans-serif;
+    }
+
+
+a.active {
+    background-color: #fc8d61;
+    color: white;
+}
+
+
+.dropdown-container {
+    display: none;
+    background-color: white;
+}
+
+    .dropdown-container a {
+        padding: 6px 0px 6px 30px;
+        font-size: 17px;
+    }
+
+/* 倒三角 */
+
+.fa-caret-down {
+    float: right;
+    padding-right: 15px;
+}
+
+#sidebarContent hr {
+    padding: 0;
+    margin: 0;
+    opacity: 0.6;
+}
+
+.logoBox {
+    width: 100%;
+    height: 70px;
+    line-height: 2;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+    .logoBox img {
+        margin: 10px;
+        width: 90px;
+    }
+
+.sidebar-btn {
+    display: flex;
+    background-color: white;
+    margin-left: 10px;
+    width: 130px;
+}
+
+    .sidebar-btn a {
+        width: 50%;
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        padding: 0px 15px;
+        color: #fc8d61;
+        box-sizing: border-box;
+    }
+
+    .sidebar-btn .loginBtn {
+        border-right: 1px solid #fc8d61;
+    }
+
+.sidenav p {
+    color: rgb(107, 107, 107);
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.social-media {
+    background-color: #fe8b5a;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+}
+
+    .social-media i {
+        font-size: 22px;
+        color: white;
+    }
+
+#sidebarContent .profileBox {
+    /* display: flex; 登入後才出現 */
+    background-color: white;
+    border-radius: 0;
+    height: 105px;
+    padding: 5px 0;
+    box-sizing: border-box;
+    display: none;
+}
+
+    #sidebarContent .profileBox div:first-child {
+        width: 55%;
+    }
+
+    #sidebarContent .profileBox .profileImg img {
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    #sidebarContent .profileBox .profileWelcome {
+        margin-top: 15px;
+    }
+
+        #sidebarContent .profileBox .profileWelcome span {
+            font-size: 20px;
+        }
+
+        #sidebarContent .profileBox .profileWelcome p {
+            font-size: 26px;
+        }
+
+.sidebar-member-link {
+    display: none;
+    /* 會員中心選項登入後才出現 */
+}
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        width: 265px;
+    }
+}

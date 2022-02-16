@@ -1,0 +1,60 @@
+﻿.searchContainer {
+    background-color: #ffffff;
+    box-shadow: 0 2px 7px #f1f1f1;
+    padding: 10px;
+}
+
+
+.filterGroup {
+    margin: 15px 10px;
+}
+
+#Keyword {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    text-align-last: center;
+    border-radius: 0.4rem;
+    border-color: rgb(221, 226, 230);
+    background-color: #ffffff;
+    margin: 0 1px;
+}
+
+#Keyword:focus {
+    border-color: rgba(252, 141, 97, 1);
+}
+
+
+.clearFilterBtn {
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    border-radius: 0.4rem;
+    border-color: rgb(221, 226, 230);
+    background-color: #f3f3f3;
+    font-size: 13px;
+}
+
+/*
+#map {
+    width: 100%;
+    height: 172px;
+    position: relative;
+    z-index: 1;
+}*/
+
+.filterResultBtn {
+    width: 100%;
+    margin: auto;
+    height: 36px;
+    text-align: center;
+    background-color: #fc8d61;
+    color: #FFFFFF;
+    border: #fc8d61;
+}
+@media (max-width: 991px) {
+
+    .dNoneOnPhone {
+        display: none;
+    }
+}

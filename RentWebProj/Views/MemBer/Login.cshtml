@@ -1,0 +1,79 @@
+﻿@model MemberLoginDetailViewModel
+@{
+    if (@TempData["msg"] == "註冊成功!")
+    {
+        <script>
+            swal("註冊成功!", "請登入後繼續", "success");
+        </script>
+    }
+}
+
+
+<div class="back">
+
+    <div class="Login spinner-1 shadow">
+        <div class="Login_Logo my-1">
+            <img src="https://soulkey373.github.io/WorkFinalblock/image/rentIcon.svg">
+        </div>
+        <div id="content"></div>
+        <p>租任何你想要的東西</p>
+        <div class="Login_content shadow">
+            @using (Html.BeginForm("Login", "Member", FormMethod.Post))
+            {
+                <h5 class="Login_content-title text-center p-4">加入我們這值得信賴的社群</h5>
+                <div class="form-group mt-4">
+                    @*<input type="Email" class="w-100  border-0" placeholder="信箱" name="Email">*@
+                    @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "w-100  border-0", @placeholder = "信箱" } })
+                </div>
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                <div class="form-group mt-4">
+                    @*<input type="password" class="w-100  border-0" placeholder="密碼" name="Password">*@
+                    @Html.EditorFor(m => m.Password, new { htmlAttributes = new { @class = "w-100  border-0", @placeholder = "密碼" } })
+                </div>
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                <button type="submit" class="btn btn-secondary login my-4 mt-5 text-light w-100 fs-5" id="sign" onclick="wait()">登入</button>
+
+            }
+            <a id="btnSignIn"><i class="fab fa-google mx-2"></i></a>
+            <a id="btnSignIn" onclick="FBLogin()"><i class="fab fa-facebook mx-2"></i></a>
+            <a id="btnLineSignIn" href="@Url.Action("Line", "Member")"><i class="fab fa-line mx-2 "></i></a>
+            <a class="btn btn-outline-success mb-3" href="@Url.Action("DeveloperLogin","Member")">開發者快速登入</a>
+
+
+        </div>
+        <div class="Login_footer my-1 ">
+            <h5 class="my-4">新來的?<a href="@Url.Action("Register", "Member")" class="text-primary m-1"><strong>註冊</strong></a></h5>
+        </div>
+    </div>
+</div>
+
+
+@section topJS{
+    <script src="~/Assets/js/MemberCenter/Fb/Fb_Init.js"></script>
+    <script src="~/Assets/js/MemberCenter/Fb/Fb_Login.js"></script>
+    <script src="~/Assets/js/MemberCenter/Fb/Fb_Logout.js"></script>
+    <script src="~/Assets/js/MemberCenter/Fb/Fb_Profile.js"></script>
+    <script src="~/Assets/js/MemberCenter/Google/Google.js"></script>
+}
+
+@section topCSS{
+    <link href="~/Assets/css/Login/Login.css" rel="stylesheet" />
+}
+
+@section endCSS{
+    <link href="~/Assets/css/Login/LoginEnd.css" rel="stylesheet" />
+    <link href="~/Assets/css/Login/spin.css" rel="stylesheet" />
+}
+
+@section endJS{
+    <script src="https://apis.google.com/js/platform.js?onload=GoogleSigninInit" async defer></script>
+    <script>
+        document.querySelector(".Login").classList.remove("spinner-1");
+    </script>
+
+}
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+
+}

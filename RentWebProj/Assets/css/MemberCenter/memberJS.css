@@ -1,0 +1,23 @@
+﻿
+/*按鈕效果*/
+.buttonDisabled{
+    background-color:gray;
+}
+
+.buttonDisabled:disabled {
+    cursor: not-allowed;
+}
+
+.buttonDisabled:hover {
+    background-color: gray;
+}
+
+.inputDisabled {
+    pointer-events: none;
+    color: #BEBEBE;
+}
+
+/*待修改效果*/
+.notDisplay{
+    display:none;
+}

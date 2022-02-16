@@ -1,0 +1,136 @@
+
+.member-display-order-title,
+.member-display-order-detail{
+    margin-top: 10px;
+    display: flex;
+}
+
+
+.member-display-order-item,
+.member-display-order-item-show-button,
+.member-display-order-item-display {
+    width: 20%;
+}
+
+.detail-title, .detail-item {
+    width: 12.5%;
+    margin-bottom: 10px;
+}
+.detail-title {
+    background-color: bisque;
+    font-size: 16px; 
+}
+.detail-item {
+
+}
+.member-display-order-item-show-button,
+.member-display-order-item-display
+{
+    text-align: center;
+}
+
+.member-display-order-item-display{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.member-display-order-item-show{
+    text-align:center;
+}
+
+.member-display-order-item-show-dynamic-button:hover {
+    color: #fc8d61;
+    cursor: pointer;
+}
+
+
+.member-display-order-detail {
+    color: #000;
+    justify-content: center;
+    align-items: baseline;
+    background-color: #fff;
+    border-bottom: 1px solid #FFEEDD;
+    border-radius: unset;
+    /*border: 1px solid blue;*/
+    border: 1px solid #fc8d61;
+    margin: 25px 0 0 0;
+}
+
+.member-display-order-detail-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: #272727; 
+    box-shadow: 3px 3px 8px #fc8d61;
+}
+.ProductName{
+    height:50px;
+}
+.orders {
+    margin-top: 50px;
+    margin-left: 550px;
+}
+.RentDate {
+    margin-top: 75px;
+    margin-left: 138px;
+}
+.TotalAmount {
+    margin-top: 75px;
+    margin-left: 1060px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.GoodsStatus {
+    margin-top: 15px;
+    margin-left: 1060px;
+    color: #fc8d61;
+}
+
+/* 訂單狀態:待付款 設定字體顏色:紅色 */
+.NotPay {
+    color: crimson;
+}
+
+@media screen and (min-width:312px) {
+    .member-display-order-title, .member-display-order-detail, .member-display-order-detail-list{
+        font-size: 20%;
+    }
+}
+
+@media screen and (min-width:414px) {
+    .member-display-order-title,
+    .member-display-order-detail,
+    .member-display-order-detail-list{
+        transition: 1s;
+        font-size: 20%;
+    }
+}
+
+@media screen and (min-width:568px ) {
+    .member-display-order-title,
+    .member-display-order-detail,
+    .member-display-order-detail-list{
+        transition: 1s;
+        font-size: 50%;
+    }
+}
+
+
+@media screen and (min-width:768px ) {
+    .member-display-order-title,
+    .member-display-order-detail,
+    .member-display-order-detail-list{
+        transition: 1s;
+        font-size: 80%;
+    }
+}
+
+@media screen and (min-width:992px ) {
+    .member-display-order-title,
+    .member-display-order-detail,
+    .member-display-order-detail-list{
+        transition: 1s;
+        font-size: 100%;
+    }
+}
+

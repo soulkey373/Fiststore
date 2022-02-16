@@ -1,0 +1,496 @@
+﻿body {
+    /* margin: 0; */
+}
+header-top{
+    
+}
+header-top .headerContainerFullWidth{
+ 
+    background-color: white;
+    width: 100%;
+}
+header-top .container-xl {
+    max-width: 1200px !important;
+    margin: auto;
+    border-bottom: 1px solid whitesmoke;
+    
+}
+.header-nav .logo{
+    position:relative;
+    z-index:2;
+}
+
+.header-nav .logo img {
+    width: 135px;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    height: 85px;
+}
+
+.header-function-box {
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+/* 登入後出現的會員icon */
+.header-member-box img {
+    width: 35px;
+    height: 35px;
+}
+
+.header-member-box i {
+    margin-right: 20px;
+    cursor: pointer;
+    z-index: 50;
+    position: relative;
+}
+
+
+.header-member-box i {
+    font-size: 30px;
+    color: #fc8d61;
+
+}
+
+.nav-btn a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 5%;
+}
+.nav-btn a:first-child{
+    margin-right:10px;
+}
+
+    .nav-btn .loginBtn {
+        color: #fc8d61;
+        background-color: white;
+        border: 1px solid #fc8d61;
+    }
+
+.nav-btn .signUpBtn {
+    color: white;
+    background-color: #fc8d61;
+    border: 1px solid #fc8d61;
+}
+
+
+#menu-control {
+    display: none;
+}
+
+.hb {
+    display: none;
+}
+/* ------------------------------------------------- */
+/* 搜尋 */
+.header-search-box button {
+    display: none;
+}
+
+.header-search-box {
+    margin-right: 23px;
+    margin-top:-8px;
+}
+
+.header-search {
+    display: inline-block;
+    position: relative;
+    height: 26px;
+    width: 26px;
+    margin: auto;
+    border: 3px solid #fc8d61;
+    border-radius: 25px;
+    transition: all 200ms ease;
+    cursor: text;
+    z-index: 50;
+}
+
+    .header-search:after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 15px;
+        right: -5px;
+        top: 16px;
+        background: #fc8d61;
+        border-radius: 3px;
+        transform: rotate(-45deg);
+        transition: all 200ms ease;
+    }
+
+    .header-search.active,
+    .header-search:hover {
+        width: 140px;
+        height: 40px;
+        margin-right: 0px;
+        margin-top: 4px;
+    }
+
+        .header-search.active:after,
+        .header-search:hover:after {
+            height: 0px;
+        }
+
+    .header-search input {
+        width: 85%;
+        border: none;
+        box-sizing: border-box;
+        font-size: 17px;
+        background: transparent;
+        padding-left: 10px;
+        outline-width: 0px;
+
+    }
+
+.header-member-box {
+    display: flex;
+    align-items:center;
+}
+
+.member-cart a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+    .member-cart a .cartQuantity {
+        background-color: #5bbdc5 ;
+        position: absolute;
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        display: flex;
+        justify-content: center;
+        right: 10px;
+        top: -10px;
+        z-index: 100;
+        font-size:13px;
+    }
+
+/* 會員中心dropdown */
+.member-dropdown {
+    position: relative;
+    display: none;
+}
+
+.member-subMenu {
+    position: absolute;
+    width: 200px;
+    top: 25px;
+    right: 20px;
+    line-height: 40px;
+    background: white;
+    padding-left: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 10;
+    padding-top: 20px;
+    display: none;
+}
+
+.member-dropdown:hover ul {
+    display: block;
+}
+
+.profileBox {
+    display: flex;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px 10px 0 0;
+    height: 100px;
+}
+
+    .profileBox div:first-child {
+        width: 50%;
+    }
+
+.profileImg img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.profileWelcome {
+    margin-top: 5px;
+}
+
+    .profileWelcome span {
+        font-size: 20px;
+    }
+
+    .profileWelcome p {
+        font-size: 26px;
+        margin-top: -8px;
+    }
+
+.member-dropdown .member-subMenu li {
+    position: relative;
+    padding: 0 25px;
+    margin: 0;
+    list-style: none;
+}
+
+.member-dropdown .member-subMenu a:not(:last-child) {
+    border-bottom: 1px solid #fc8d61;
+}
+
+
+.member-dropdown .member-subMenu a {
+    color: rgb(119, 119, 119);
+}
+
+.member-dropdown .member-subMenu li:hover {
+    background-color: #fc8d61;
+    color: white;
+}
+
+    .member-dropdown .member-subMenu li:hover a {
+        color: white;
+    }
+
+.member-dropdown .member-subMenu a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------- */
+
+/* 第二塊導覽列 下拉式選單*/
+.dropdown-nav {
+    height: 0px;
+/*    background: white;
+    display: grid;*/
+}
+
+.navbar {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    top: -60px;
+}
+
+.links {
+    display: flex;
+    margin:auto;
+    padding: 0 !important;
+ /*   margin-bottom: 10px;*/
+}
+
+    .links i {
+        font-size: 12px;
+    }
+
+    .links li {
+        position: relative;
+        list-style: none;
+        margin: 5px 25px;
+        height:100%;
+    }
+
+        .links li a {
+            text-decoration: none;
+            white-space: nowrap;
+            color: rgb(119, 119, 119);
+            font-size: 18px;
+            position: relative;
+            z-index: 35;
+        }
+
+        .links li:hover .arrow {
+            transform: rotate(180deg);
+        }
+
+        .links li .arrow {
+            margin-left: 6px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            color: darkolivegreen;
+        }
+
+    .links .sub-menu {
+        position: absolute;
+        width: 135px;
+        top: 23px;
+        left: -30%;
+        line-height: 40px;
+        background: white;
+        padding-left: 0;
+        border-radius: 0 0 4px 4px;
+        display: none;
+        padding-top: 12px;
+        z-index: 30;
+    }
+
+nav .navbar .links li:hover .sub-menu {
+    display: block;
+}
+
+.links .sub-menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    padding: 0 0 0 30px;
+    margin: 0;
+}
+
+    .links .sub-menu li:hover {
+        background-color: #fc8d61;
+        color: white;
+    }
+
+        .links .sub-menu li:hover a {
+            color: white;
+        }
+
+.links .sub-menu a {
+    font-size: 16px;
+}
+
+
+@media (max-width: 991px) {
+    .dropdown-nav,
+    .nav-btn,
+    .header-member-box .member-dropdown {
+        display: none !important;
+    }
+
+    .header-nav .logo img {
+        width: 120px;
+    }
+
+    .header-nav {
+        height: 70px;
+        z-index: 8;
+    }
+
+    .header-member-box i{
+        margin-right: 24px;
+    }
+    .member-cart a .cartQuantity {
+        right: 14px;
+    }
+        .hb {
+        display: block;
+        width: 45px;
+        height: 45px;
+        border: none;
+        border-radius: 10%;
+        background-color: rgb(230, 227, 224);
+        position: relative;
+        /* 為了讓三條span吃到父層定位 */
+        z-index: 200;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+
+        .hb span {
+            width: 26px;
+            height: 2px;
+            background-color: cadetblue;
+            background-color: #fd9a73;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            /* 為了讓三條span在父層水平垂直置中 */
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: 0.25s ease-in-out;
+            -moz-transition: 0.25s ease-in-out;
+            -o-transition: 0.25s ease-in-out;
+            transition: 0.25s ease-in-out;
+        }
+
+            .hb span:first-child {
+                transform: translateY(-10px);
+                /* translateY(o) 指定元素由參考點縱向移動 o 距離 */
+                /* top-16px也可以 */
+            }
+
+            .hb span:last-child {
+                transform: translateY(10px);
+                /* bottom-16px也可以 */
+            }
+        /* ---------------------以下為漢堡點開動畫 */
+
+        .hb.hb_open span:nth-child(1) {
+            -webkit-transform: rotate(135deg);
+            -moz-transform: rotate(135deg);
+            -o-transform: rotate(135deg);
+            transform: rotate(135deg);
+        }
+
+        .hb.hb_open span:nth-child(2) {
+            opacity: 0;
+            left: -50px;
+        }
+
+        .hb.hb_open span:nth-child(3) {
+            -webkit-transform: rotate(-135deg);
+            -moz-transform: rotate(-135deg);
+            -o-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+        }
+
+    .overlayMobile.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(32, 32, 32) !important;
+        opacity: 0.6;
+        filter: grayscale(100%);
+        z-index: 100;
+    }
+
+    @media screen and (max-width: 767px) {
+        .header-nav {
+            flex-wrap: nowrap;
+        }
+        .header-search-box {
+            margin-right: 22px;
+        }
+        .header-search input {
+            font-size: 14px;
+            padding: 4px 10px;
+        }
+        .header-search.active,
+        .header-search:hover {
+            width: 115px;
+            height: 32px;
+        }
+        .header-member-box i {
+            margin-right: 22px;
+        }
+        .hb {
+            width: 42px;
+            height: 42px;
+        }
+
+        .hb span {
+            width: 24px;
+        }
+    }
+}
